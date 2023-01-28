@@ -1,0 +1,69 @@
+image: golang:1.19-alpine
+
+stages:
+  - lint
+  - test
+  - build
+  - containerize
+  - release_tagging
+
+workflow:
+  rules:
+    - if: $CI_COMMIT_TAG
+      when: never
+    - when: always
+
+fmt:
+  stage: lint
+  script:
+    - go fmt
+    - go vet
+
+test:
+  stage: test
+  script:
+    - go test -coverprofile=coverage.out
+    - go tool cover -html=coverage.out -o coverage.html
+  artifacts:
+    paths:
+      - coverage.html
+    expire_in: 1 week
+
+build:
+  stage: build
+  script:
+    - go build
+  artifacts:
+    paths:
+      - pipelines_showcase
+    expire_in: 1 week
+
+docker-build:
+  stage: containerize
+  image:
+    name: gcr.io/kaniko-project/executor:debug
+    entrypoint: [ "" ]
+  variables:
+    KUBERNETES_CPU_REQUEST: 1
+    KUBERNETES_CPU_LIMIT: 1
+    KUBERNETES_MEMORY_REQUEST: 2048Mi
+    KUBERNETES_MEMORY_LIMIT: 2048Mi
+  needs: ["build"]
+  script:
+    - mkdir -p /kaniko/.docker
+    - echo "{\"auths\":{\"$CI_REGISTRY\":{\"username\":\"$CI_REGISTRY_USER\",\"password\":\"$CI_REGISTRY_PASSWORD\"}}}" > /kaniko/.docker/config.json
+    - /kaniko/executor --context $CI_PROJECT_DIR --dockerfile $CI_PROJECT_DIR/Dockerfile --destination $CI_REGISTRY_IMAGE:$CI_PIPELINE_IID
+
+release_job:
+  stage: release_tagging
+  image: registry.gitlab.com/gitlab-org/release-cli:latest
+  needs:
+    - job: docker-build
+      artifacts: true
+  script:
+    - echo "running release_job for $CI_PIPELINE_IID"
+  release:
+    name: 'Release $CI_PIPELINE_IID'
+    description: 'Created using the release-cli'
+    tag_name: '$CI_PIPELINE_IID'
+    ref: '$CI_COMMIT_SHA'
