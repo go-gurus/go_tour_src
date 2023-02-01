@@ -1,4 +1,4 @@
-module codecentric.de/hello-golog/v2
+module grohm.io/hello-golog/v2
 
 go 1.17
 

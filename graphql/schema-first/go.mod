@@ -1,4 +1,4 @@
-module codecentric.de/demo/graphql-schema-first-fridge
+module grohm.io/demo/graphql-schema-first-fridge
 
 go 1.18
 

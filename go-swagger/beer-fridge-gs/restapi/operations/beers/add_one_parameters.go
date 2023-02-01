@@ -14,7 +14,7 @@ import (
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/validate"
 
-	"codecentric.de/beer-fridge-go-swagger/models"
+	"grohm.io/beer-fridge-go-swagger/models"
 )
 
 // NewAddOneParams creates a new AddOneParams object

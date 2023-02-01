@@ -1,6 +1,6 @@
 package service
 
-import "codecentric.de/demo/graphql-schema-first-fridge/graph/model"
+import "grohm.io/demo/graphql-schema-first-fridge/graph/model"
 
 var beerList = []*model.Beer{
 	{

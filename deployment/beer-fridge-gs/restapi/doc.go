@@ -10,10 +10,10 @@
 //  Version: 1.0.0
 //
 //  Consumes:
-//    - application/de.codecentric.go-workshop.beer-fridge.v1+json
+//    - application/io.grohm.go-workshop.beer-fridge.v1+json
 //
 //  Produces:
-//    - application/de.codecentric.go-workshop.beer-fridge.v1+json
+//    - application/io.grohm.go-workshop.beer-fridge.v1+json
 //
 // swagger:meta
 package restapi

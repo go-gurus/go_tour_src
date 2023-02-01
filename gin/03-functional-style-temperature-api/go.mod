@@ -1,4 +1,4 @@
-module codecentric.de/beer-fridge-functional-style
+module grohm.io/beer-fridge-functional-style
 
 go 1.18
 

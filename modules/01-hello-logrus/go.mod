@@ -1,4 +1,4 @@
-module codecentric.de/hello-logrus/v2
+module grohm.io/hello-logrus/v2
 
 go 1.17
 

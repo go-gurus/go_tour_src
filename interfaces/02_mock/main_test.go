@@ -1,8 +1,8 @@
 package main
 
 import (
-	"codecentric.de/interfaces/v2/mock_main"
 	"github.com/golang/mock/gomock"
+	"grohm.io/interfaces/v2/mock_main"
 	"testing"
 )
 

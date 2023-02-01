@@ -1,4 +1,4 @@
-module codecentric.de/gin-ping-pong
+module grohm.io/gin-ping-pong
 
 go 1.18
 

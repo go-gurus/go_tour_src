@@ -1,7 +1,7 @@
 package graph
 
 import (
-	"codecentric.de/demo/graphql-schema-first-fridge/graph/model"
+	"grohm.io/demo/graphql-schema-first-fridge/graph/model"
 )
 
 // This file will not be regenerated automatically.

@@ -25,7 +25,7 @@ import (
 	flags "github.com/jessevdk/go-flags"
 	"golang.org/x/net/netutil"
 
-	"codecentric.de/beer-fridge-go-swagger/restapi/operations"
+	"grohm.io/beer-fridge-go-swagger/restapi/operations"
 )
 
 const (

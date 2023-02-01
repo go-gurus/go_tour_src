@@ -1,4 +1,4 @@
-module codecentric.de/beer-fridge-go-swagger
+module grohm.io/beer-fridge-go-swagger
 
 go 1.18
 

@@ -11,7 +11,7 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"codecentric.de/demo/graphql-schema-first-fridge/graph/model"
+	"grohm.io/demo/graphql-schema-first-fridge/graph/model"
 	"github.com/99designs/gqlgen/graphql"
 	"github.com/99designs/gqlgen/graphql/introspection"
 	gqlparser "github.com/vektah/gqlparser/v2"

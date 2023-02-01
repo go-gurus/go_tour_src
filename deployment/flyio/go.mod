@@ -1,3 +1,3 @@
-module codecentric.de/flyio
+module grohm.io/flyio
 
 go 1.19

@@ -2,10 +2,10 @@
 package main
 
 import (
-	"codecentric.de/interfaces/v2/golog_facade"
-	"codecentric.de/interfaces/v2/logrus_facade"
-	"codecentric.de/interfaces/v2/zap_facade"
 	"fmt"
+	"grohm.io/interfaces/v2/golog_facade"
+	"grohm.io/interfaces/v2/logrus_facade"
+	"grohm.io/interfaces/v2/zap_facade"
 	"os"
 	"time"
 )

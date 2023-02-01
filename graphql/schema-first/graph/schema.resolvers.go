@@ -7,9 +7,9 @@ import (
 	"context"
 	"errors"
 
-	"codecentric.de/demo/graphql-schema-first-fridge/graph/generated"
-	"codecentric.de/demo/graphql-schema-first-fridge/graph/model"
 	"github.com/samber/lo"
+	"grohm.io/demo/graphql-schema-first-fridge/graph/generated"
+	"grohm.io/demo/graphql-schema-first-fridge/graph/model"
 )
 
 // Beers is the resolver for the beers field.

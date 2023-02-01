@@ -1,4 +1,4 @@
-module codecentric.de/hello-zap-vendor
+module grohm.io/hello-zap-vendor
 
 go 1.18
 

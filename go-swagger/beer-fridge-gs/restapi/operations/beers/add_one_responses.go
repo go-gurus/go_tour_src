@@ -10,7 +10,7 @@ import (
 
 	"github.com/go-openapi/runtime"
 
-	"codecentric.de/beer-fridge-go-swagger/models"
+	"grohm.io/beer-fridge-go-swagger/models"
 )
 
 // AddOneCreatedCode is the HTTP code returned for type AddOneCreated

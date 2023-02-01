@@ -1,4 +1,4 @@
-module codecentric.de/beer-fridge-simple-temperature
+module grohm.io/beer-fridge-simple-temperature
 
 go 1.18
 

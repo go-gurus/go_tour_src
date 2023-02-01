@@ -3,19 +3,19 @@
 package restapi
 
 import (
-	"codecentric.de/beer-fridge-go-swagger/beer_container"
-	"codecentric.de/beer-fridge-go-swagger/models"
-	"codecentric.de/beer-fridge-go-swagger/temperature"
 	"crypto/tls"
 	"github.com/go-openapi/errors"
 	"github.com/go-openapi/runtime"
 	"github.com/go-openapi/runtime/middleware"
 	"github.com/go-openapi/swag"
+	"grohm.io/beer-fridge-go-swagger/beer_container"
+	"grohm.io/beer-fridge-go-swagger/models"
+	"grohm.io/beer-fridge-go-swagger/temperature"
 	"net/http"
 
-	"codecentric.de/beer-fridge-go-swagger/restapi/operations"
-	"codecentric.de/beer-fridge-go-swagger/restapi/operations/beers"
-	"codecentric.de/beer-fridge-go-swagger/restapi/operations/fridge"
+	"grohm.io/beer-fridge-go-swagger/restapi/operations"
+	"grohm.io/beer-fridge-go-swagger/restapi/operations/beers"
+	"grohm.io/beer-fridge-go-swagger/restapi/operations/fridge"
 )
 
 //go:generate swagger generate server --target ../../beer-fridge-gs --name BeerFridge --spec ../swagger.yml --principal interface{}

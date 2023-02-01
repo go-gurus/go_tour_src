@@ -1,4 +1,4 @@
-module codecentric.de/documentation
+module grohm.io/documentation
 
 go 1.19
 

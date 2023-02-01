@@ -1,15 +1,15 @@
 package main
 
 import (
-	"codecentric.de/demo/graphql-schema-first-fridge/service"
+	"grohm.io/demo/graphql-schema-first-fridge/service"
 	"log"
 	"net/http"
 	"os"
 
-	"codecentric.de/demo/graphql-schema-first-fridge/graph"
-	"codecentric.de/demo/graphql-schema-first-fridge/graph/generated"
 	"github.com/99designs/gqlgen/graphql/handler"
 	"github.com/99designs/gqlgen/graphql/playground"
+	"grohm.io/demo/graphql-schema-first-fridge/graph"
+	"grohm.io/demo/graphql-schema-first-fridge/graph/generated"
 )
 
 const defaultPort = "8080"

@@ -1,4 +1,4 @@
-module codecentric.de/hello-zap/v2
+module grohm.io/hello-zap/v2
 
 go 1.17
 

@@ -1,8 +1,8 @@
 package beer_container
 
 import (
-	"codecentric.de/beer-fridge-go-swagger/models"
 	"github.com/go-openapi/errors"
+	"grohm.io/beer-fridge-go-swagger/models"
 	"sync"
 	"sync/atomic"
 )

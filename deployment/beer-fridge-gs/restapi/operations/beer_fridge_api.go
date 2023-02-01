@@ -19,8 +19,8 @@ import (
 	"github.com/go-openapi/strfmt"
 	"github.com/go-openapi/swag"
 
-	"codecentric.de/beer-fridge-go-swagger/restapi/operations/beers"
-	"codecentric.de/beer-fridge-go-swagger/restapi/operations/fridge"
+	"grohm.io/beer-fridge-go-swagger/restapi/operations/beers"
+	"grohm.io/beer-fridge-go-swagger/restapi/operations/fridge"
 )
 
 // NewBeerFridgeAPI creates a new BeerFridge instance
@@ -86,11 +86,11 @@ type BeerFridgeAPI struct {
 	BearerAuthenticator func(string, security.ScopedTokenAuthentication) runtime.Authenticator
 
 	// JSONConsumer registers a consumer for the following mime types:
-	//   - application/de.codecentric.go-workshop.beer-fridge.v1+json
+	//   - application/io.grohm.go-workshop.beer-fridge.v1+json
 	JSONConsumer runtime.Consumer
 
 	// JSONProducer registers a producer for the following mime types:
-	//   - application/de.codecentric.go-workshop.beer-fridge.v1+json
+	//   - application/io.grohm.go-workshop.beer-fridge.v1+json
 	JSONProducer runtime.Producer
 
 	// BeersAddOneHandler sets the operation handler for the add one operation
@@ -219,8 +219,8 @@ func (o *BeerFridgeAPI) ConsumersFor(mediaTypes []string) map[string]runtime.Con
 	result := make(map[string]runtime.Consumer, len(mediaTypes))
 	for _, mt := range mediaTypes {
 		switch mt {
-		case "application/de.codecentric.go-workshop.beer-fridge.v1+json":
-			result["application/de.codecentric.go-workshop.beer-fridge.v1+json"] = o.JSONConsumer
+		case "application/io.grohm.go-workshop.beer-fridge.v1+json":
+			result["application/io.grohm.go-workshop.beer-fridge.v1+json"] = o.JSONConsumer
 		}
 
 		if c, ok := o.customConsumers[mt]; ok {
@@ -236,8 +236,8 @@ func (o *BeerFridgeAPI) ProducersFor(mediaTypes []string) map[string]runtime.Pro
 	result := make(map[string]runtime.Producer, len(mediaTypes))
 	for _, mt := range mediaTypes {
 		switch mt {
-		case "application/de.codecentric.go-workshop.beer-fridge.v1+json":
-			result["application/de.codecentric.go-workshop.beer-fridge.v1+json"] = o.JSONProducer
+		case "application/io.grohm.go-workshop.beer-fridge.v1+json":
+			result["application/io.grohm.go-workshop.beer-fridge.v1+json"] = o.JSONProducer
 		}
 
 		if p, ok := o.customProducers[mt]; ok {

@@ -1,7 +1,7 @@
 package temperature
 
 import (
-	"codecentric.de/beer-fridge-go-swagger/models"
+	"grohm.io/beer-fridge-go-swagger/models"
 	"math/rand"
 )
 

@@ -1,11 +1,11 @@
 consumes:
-- application/de.codecentric.go-workshop.beer-fridge.v1+json
+- application/io.grohm.go-workshop.beer-fridge.v1+json
 info:
   description: Beer fridge service build with go-swagger
   title: A beer fridge service
   version: 1.0.0
 produces:
-- application/de.codecentric.go-workshop.beer-fridge.v1+json
+- application/io.grohm.go-workshop.beer-fridge.v1+json
 schemes:
 - http
 swagger: "2.0"

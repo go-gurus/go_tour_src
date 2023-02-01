@@ -19,10 +19,10 @@ var (
 func init() {
 	SwaggerJSON = json.RawMessage([]byte(`{
   "consumes": [
-    "application/de.codecentric.go-workshop.beer-fridge.v1+json"
+    "application/io.grohm.go-workshop.beer-fridge.v1+json"
   ],
   "produces": [
-    "application/de.codecentric.go-workshop.beer-fridge.v1+json"
+    "application/io.grohm.go-workshop.beer-fridge.v1+json"
   ],
   "schemes": [
     "http"
@@ -205,10 +205,10 @@ func init() {
 }`))
 	FlatSwaggerJSON = json.RawMessage([]byte(`{
   "consumes": [
-    "application/de.codecentric.go-workshop.beer-fridge.v1+json"
+    "application/io.grohm.go-workshop.beer-fridge.v1+json"
   ],
   "produces": [
-    "application/de.codecentric.go-workshop.beer-fridge.v1+json"
+    "application/io.grohm.go-workshop.beer-fridge.v1+json"
   ],
   "schemes": [
     "http"

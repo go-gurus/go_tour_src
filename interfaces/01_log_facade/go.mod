@@ -1,4 +1,4 @@
-module codecentric.de/interfaces/v2
+module grohm.io/interfaces/v2
 
 go 1.17
 

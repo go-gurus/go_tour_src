@@ -1,3 +1,3 @@
-module codecentric.de/pipelines_showcase
+module grohm.io/pipelines_showcase
 
 go 1.19
