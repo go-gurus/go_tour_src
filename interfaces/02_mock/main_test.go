@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/golang/mock/gomock"
+	"go.uber.org/mock/gomock"
 	"grohm.io/interfaces/v2/mock_main"
 	"testing"
 )
