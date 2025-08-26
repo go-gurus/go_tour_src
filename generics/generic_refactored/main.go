@@ -6,8 +6,8 @@ type Number interface {
 	int64 | float64
 }
 
-func SumNumbers[CompType comparable, Number int64 | float64](m map[CompType]Number) Number {
-	var sum Number
+func SumNumbers[CompType comparable, T Number | float64](m map[CompType]T) T {
+	var sum T
 	for _, val := range m {
 		sum += val
 	}
@@ -25,6 +25,7 @@ func main() {
 		"second": 26.99,
 	}
 
+	// Types are inferred here
 	fmt.Printf("Generic Sums with Constraint: %v and %v\n",
 		SumNumbers(ints),
 		SumNumbers(floats))
